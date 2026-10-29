@@ -3,85 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumit | Personal Website</title>
+
+    <title>Sumit | My Personal Website</title>
 
     <style>
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
             background: #f1f5f9;
             color: #1e293b;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         header {
-            background: #0f172a;
+            background: linear-gradient(135deg, #0f172a, #1d4ed8);
             color: white;
             text-align: center;
-            padding: 45px 15px;
+            padding: 65px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
         }
 
         header p {
-            color: #cbd5e1;
+            color: #dbeafe;
+            font-size: 17px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 12px 24px;
+            background: white;
+            color: #1d4ed8;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .hero-button:hover {
+            background: #dbeafe;
+            transform: translateY(-3px);
         }
 
         nav {
-            background: #1e293b;
-            padding: 14px;
+            background: #0f172a;
             text-align: center;
+            padding: 15px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav a {
+            display: inline-block;
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 5px 12px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
         }
 
         main {
-            max-width: 800px;
-            margin: 30px auto;
+            max-width: 850px;
+            margin: 35px auto;
             padding: 0 16px;
         }
 
         section {
             background: white;
-            padding: 25px;
-            margin-bottom: 22px;
-            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 25px;
+            border-radius: 15px;
             box-shadow: 0 4px 15px #0000000d;
+            scroll-margin-top: 85px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px #00000012;
         }
 
         h2 {
             color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin: 12px 0 5px;
         }
 
         .skill {
             display: inline-block;
             background: #dbeafe;
             color: #1d4ed8;
-            padding: 7px 14px;
+            padding: 7px 16px;
+            margin: 5px;
             border-radius: 20px;
-            margin: 4px;
+            font-weight: bold;
+        }
+
+        .project {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 18px;
+            margin-top: 15px;
+            border-radius: 10px;
         }
 
         .button {
             display: inline-block;
+            margin-top: 12px;
             background: #2563eb;
             color: white;
             text-decoration: none;
-            padding: 10px 18px;
+            padding: 11px 20px;
             border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
         }
 
         footer {
             background: #0f172a;
             color: white;
             text-align: center;
-            padding: 18px;
+            padding: 22px 15px;
+        }
+
+        footer p {
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 45px 15px;
+            }
+
+            header h1 {
+                font-size: 29px;
+            }
+
+            header p {
+                font-size: 15px;
+            }
+
+            nav a {
+                margin: 5px 7px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 21px;
+            }
         }
     </style>
 </head>
@@ -90,7 +183,12 @@
 
     <header>
         <h1>Hello, I am Sumit!</h1>
-        <p>Computer Engineering Student | Web Development Learner</p>
+        <p>Computer Engineering Student</p>
+        <p>Learning HTML, CSS and Web Development</p>
+
+        <a class="hero-button" href="#about">
+            Explore My Website
+        </a>
     </header>
 
     <nav>
@@ -104,37 +202,76 @@
 
         <section id="about">
             <h2>About Me</h2>
+
             <p>
                 Hello! I am Sumit.
-                I am learning HTML, CSS and GitHub.
-                I enjoy learning new things and creating websites.
+                I am a Computer Engineering student
+                and I am learning web development.
+            </p>
+
+            <p>
+                I enjoy learning new technologies and
+                creating websites using HTML and CSS.
+                This is my personal website project.
             </p>
         </section>
 
         <section id="skills">
             <h2>My Skills</h2>
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">GitHub</span>
-            <p>I am learning web development step by step.</p>
+
+            <p>These are the technologies I am learning:</p>
+
+            <div>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">GitHub</span>
+                <span class="skill">Web Design</span>
+            </div>
         </section>
 
         <section id="projects">
             <h2>My Projects</h2>
-            <h3>My First Website</h3>
-            <p>
-                My first personal website created
-                using HTML, CSS and GitHub Pages.
-            </p>
+
+            <div class="project">
+                <h3>My First Website</h3>
+
+                <p>
+                    A personal website created using
+                    HTML, CSS and GitHub Pages.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://sumitsesp-alt.github.io/my-first-project/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View My Website
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>More Projects Coming Soon</h3>
+
+                <p>
+                    I am learning and working on
+                    new web development projects.
+                </p>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>You can visit my GitHub profile here.</p>
-            <a class="button"
-               href="https://github.com/sumitsesp-alt"
-               target="_blank"
-               rel="noopener noreferrer">
+
+            <p>
+                You can visit my GitHub profile
+                to see my projects and coding work.
+            </p>
+
+            <a
+                class="button"
+                href="https://github.com/sumitsesp-alt"
+                target="_blank"
+                rel="noopener noreferrer">
                 Visit My GitHub
             </a>
         </section>
@@ -143,6 +280,7 @@
 
     <footer>
         <p>© 2026 Sumit | My Personal Website</p>
+        <p>Built with HTML and CSS</p>
     </footer>
 
 </body>
