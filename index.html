@@ -3,11 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Sumit's Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header p {
+            color: #cbd5e1;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello, I am Sumit!</h1>
-    <p>Welcome to my first website.</p>
-    <p>I am learning HTML and GitHub.</p>
+    <header>
+        <h1>Hello, I am Sumit!</h1>
+        <p>Welcome to my personal website</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Sumit.
+                I am learning HTML, CSS and GitHub.
+                This is my first website project.
+            </p>
+
+            <a class="button"
+               href="https://github.com/sumitsesp-alt">
+               My GitHub
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Sumit | My First Website</p>
+    </footer>
 </body>
 </html>
