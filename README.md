@@ -1,8 +1,12 @@
 # my-first-project
 Hello! my Name is Sumit.
 I am learning GitHub and programming.
+
+
 About This project 
 This my first project on GitHub.
+
+
 My goals 
 * Learn GitHu
 * Learn programming
