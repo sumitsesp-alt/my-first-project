@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumit's Website</title>
+    <title>Sumit | Personal Website</title>
 
     <style>
         * {
@@ -15,35 +15,57 @@
             font-family: Arial, sans-serif;
             background: #f1f5f9;
             color: #1e293b;
+            line-height: 1.6;
         }
 
         header {
             background: #0f172a;
             color: white;
             text-align: center;
-            padding: 25px 15px;
+            padding: 45px 15px;
         }
 
         header p {
             color: #cbd5e1;
         }
 
+        nav {
+            background: #1e293b;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
         main {
-            max-width: 700px;
-            margin: 40px auto;
+            max-width: 800px;
+            margin: 30px auto;
             padding: 0 16px;
         }
 
-        .card {
+        section {
             background: white;
-            padding: 30px 20px;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 4px 15px #00000010;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px #0000000d;
         }
 
         h2 {
             color: #2563eb;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 7px 14px;
+            border-radius: 20px;
+            margin: 4px;
         }
 
         .button {
@@ -51,43 +73,77 @@
             background: #2563eb;
             color: white;
             text-decoration: none;
-            padding: 12px 22px;
+            padding: 10px 18px;
             border-radius: 8px;
-            margin-top: 12px;
         }
 
         footer {
+            background: #0f172a;
+            color: white;
             text-align: center;
-            padding: 20px;
-            color: #64748b;
+            padding: 18px;
         }
     </style>
 </head>
 
 <body>
+
     <header>
         <h1>Hello, I am Sumit!</h1>
-        <p>Welcome to my personal website</p>
+        <p>Computer Engineering Student | Web Development Learner</p>
     </header>
 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <main>
-        <section class="card">
+
+        <section id="about">
             <h2>About Me</h2>
             <p>
                 Hello! I am Sumit.
                 I am learning HTML, CSS and GitHub.
-                This is my first website project.
+                I enjoy learning new things and creating websites.
             </p>
+        </section>
 
+        <section id="skills">
+            <h2>My Skills</h2>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">GitHub</span>
+            <p>I am learning web development step by step.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <h3>My First Website</h3>
+            <p>
+                My first personal website created
+                using HTML, CSS and GitHub Pages.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>You can visit my GitHub profile here.</p>
             <a class="button"
-               href="https://github.com/sumitsesp-alt">
-               My GitHub
+               href="https://github.com/sumitsesp-alt"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visit My GitHub
             </a>
         </section>
+
     </main>
 
     <footer>
-        <p>© 2026 Sumit | My First Website</p>
+        <p>© 2026 Sumit | My Personal Website</p>
     </footer>
+
 </body>
 </html>
